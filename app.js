@@ -17,11 +17,11 @@ function pressButton() {
 }
 
 function pressedButton(event, pos) {
-    if (!gameWon) { // Verifica si el juego no se ha ganado
+    if (!gameWon) { // Verificar si el juego no se ha ganado
         let x = 'x';
         let o = 'o';
         let currentBtn = event.target;
-        if (!currentBtn.textContent) { // Verifica nuevamente si el botón está vacío
+        if (!currentBtn.textContent) { // Verificar nuevamente si el botón está vacío
             if (shift % 2 === 0) {
                 currentBtn.style.color = '#cd42ffc4';
                 currentBtn.textContent = x;
