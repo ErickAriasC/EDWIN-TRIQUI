@@ -18,17 +18,17 @@ function pressButton() {
 
 function pressedButton(event, pos) {
     if (!gameWon) { // Verifica si el juego no se ha ganado
-        let x = 'X';
-        let o = 'O';
+        let x = 'x';
+        let o = 'o';
         let currentBtn = event.target;
         if (!currentBtn.textContent) { // Verifica nuevamente si el botón está vacío
             if (shift % 2 === 0) {
-                currentBtn.style.color = '#008000';
+                currentBtn.style.color = '#cd42ffc4';
                 currentBtn.textContent = x;
                 board[pos] = x;
                 shift++;
             } else {
-                currentBtn.style.color = '#0d58e4';
+                currentBtn.style.color = '#008cffae';
                 currentBtn.textContent = o;
                 board[pos] = o;
                 shift++;
@@ -56,6 +56,7 @@ function pressedButton(event, pos) {
         }
     }
 }
+
 
 
 function validateGame() {
