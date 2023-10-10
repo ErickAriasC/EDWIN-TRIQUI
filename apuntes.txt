@@ -1,0 +1,3 @@
+DOMContentLoaded: va a suceder  solo cuando ya cargue toda la pagina
+
+event.target-> me guarda a que boton le di click
